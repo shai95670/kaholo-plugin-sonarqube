@@ -1,0 +1,48 @@
+ {
+  "name": "sonarQube Wrapper",
+  "type": "executer",
+  "imgUrl": "sonarqube-logo.png",
+  "execProgram": "node",
+  "main": "app.js",
+  "version": "2.0.0",
+  "description": "Wrapper for sonarQube code analysis",
+  "settings": [
+    {
+      "name": "username",
+      "viewName": "Username",
+      "type": "string"
+    },
+    {
+      "name": "password",
+      "viewName": "Password",
+      "type": "string"
+    },
+    {
+      "name": "sonarQubeServerUrl",
+      "viewName": "sonarqube Server Url",
+      "type": "string"
+    }
+  ],
+  "methods": [
+    {
+      "name": "createProject",
+      "viewName": "Create Project",
+      "params": [
+        {
+          "name": "name",
+          "viewName": "Project Name",
+          "type": "string"
+        },
+        {
+          "name": "project",
+          "viewName": "Project Key",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "getActiveUsers",
+      "viewName": "Get Active Users"
+    }
+  ]
+}
