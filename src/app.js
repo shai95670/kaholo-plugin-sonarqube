@@ -61,7 +61,7 @@ function _createUrl(baseServerUrl, action) {
   const USERS_END_POINT = "api/users/search";
   const PROJECT_END_POINT = "api/projects/create";
 
-  return action ? `${baseServerUrl}/${PROJECT_END_POINT}` : `${sonarQubeServerUrl}/${USERS_END_POINT}`
+  return action ? `${baseServerUrl}/${PROJECT_END_POINT}` : `${baseServerUrl}/${USERS_END_POINT}`
 }
 
 async function _makeRequest(config) {
